@@ -1,16 +1,29 @@
 .logo {
 	font-family: Raleway;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 700;
-	line-height: 1.19;
+	line-height: 1.16;
 	color: var(--accent-color);
+
+	@mixin desk {
+		font-size: 26px;
+		line-height: 1.19;
+	}
 }
 
 //------nav------
 
 .logo-nav {
 	display: flex;
-	padding: 24px 0;
+	padding: 16px 0;
+
+	@mixin tab {
+		padding: 26px 0;
+	}
+
+	@mixin desk {
+		padding: 24px 0;
+	}
 }
 
 .logo-nav--accent {
@@ -29,6 +42,18 @@
 .footer-logo {
 	display: block;
 	margin-bottom: 20px;
+
+	text-align: center;
+
+	@mixin tel {
+	}
+
+	@mixin tab {
+	}
+
+	@mixin desk {
+		text-align: left;
+	}
 }
 
 .footer-logo--accent {

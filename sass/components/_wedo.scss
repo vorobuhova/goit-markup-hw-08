@@ -1,8 +1,13 @@
 /* -------wedo------- */
 
 .wedo-section {
-	padding-top: 0;
-	padding-bottom: 94px;
+	display: none;
+
+	@mixin desk {
+		display: block;
+		padding-top: 0;
+		padding-bottom: 94px;
+	}
 }
 
 .wedo-title {

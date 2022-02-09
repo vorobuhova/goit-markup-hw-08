@@ -1,14 +1,23 @@
 /* -------footer------- */
 
 .footer-wrap-all {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+	@mixin desk {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
 }
 
 .footer-wrap-left {
-	display: flex;
-	align-items: baseline;
+	@mixin tab {
+		display: flex;
+		align-items: baseline;
+
+		justify-content: space-between;
+		max-width: 603px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .footer {
@@ -17,8 +26,20 @@
 	background-color: var(--footer-bg-color);
 }
 
-.footer-adress:not(:last-child) {
-	margin-bottom: 9px;
+.footer-adress {
+	text-align: center;
+
+	@mixin desk {
+		text-align: left;
+	}
+}
+
+.footer-adress__item:not(:last-child) {
+	margin-bottom: 8px;
+
+	@mixin desk {
+		margin-bottom: 9px;
+	}
 }
 
 .footer-map {
@@ -50,18 +71,35 @@
 }
 
 .footer-socials {
-	width: 206px;
+	width: 100%;
+	max-width: 206px;
 	height: 80px;
-	margin-left: 70px;
+
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .footer-socials-list {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	@mixin tel {
+		width: 206px;
+	}
+
+	@mixin tab {
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	@mixin desk {
+		height: 80px;
+		margin-left: 70px;
+	}
 }
 
 .footer-socials__title {
+	text-align: center;
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -69,6 +107,20 @@
 
 	color: var(--primary-white-color);
 	text-transform: uppercase;
+
+	@mixin desk {
+		text-align-last: left;
+	}
+}
+
+.footer-socials-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@mixin tel {
+		flex-wrap: wrap;
+	}
 }
 
 .footer-social-list__link {
@@ -92,12 +144,17 @@
 	}
 }
 
-.footer-form__wrap {
-	display: flex;
+.footer-wrap-right {
+	margin-top: 60px;
+
+	@mixin desk {
+		margin-top: 0;
+	}
 }
 
 .footer-form__label {
 	display: block;
+	text-align: center;
 
 	margin-bottom: 20px;
 
@@ -107,11 +164,22 @@
 	text-transform: uppercase;
 
 	color: var(--primary-white-color);
+
+	@mixin desk {
+		text-align-last: left;
+	}
+}
+
+.input-wrap {
+	@mixin desk {
+		display: flex;
+	}
 }
 
 .input-wrap__input {
 	display: block;
-	width: 358px;
+	width: 100%;
+
 	height: 50px;
 	padding: 15px 16px;
 
@@ -125,6 +193,19 @@
 		font-size: 16px;
 		line-height: 1.25;
 		color: rgba(255, 255, 255, 0.6);
+	}
+
+	@mixin tel {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@mixin desk {
+		width: 358px;
 	}
 }
 

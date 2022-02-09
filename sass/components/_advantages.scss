@@ -1,15 +1,36 @@
 /* -------advantages------- */
 
 .advantages-list {
-	display: flex;
-	justify-content: center;
+	// display: flex;
+	// justify-content: center;
+	@include tab {
+		display: flex;
+		flex-wrap: wrap;
+
+		margin: -30px;
+		margin-bottom: 0;
+	}
+
+	@include desk {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .advantages-item {
-	width: 270px;
+	@include tab {
+		width: 354px;
+	}
 
-	&:not(:first-child) {
-		margin-left: 30px;
+	@media screen and (max-width: 1199px) {
+		margin: 15px;
+	}
+
+	@include desk {
+		width: 270px;
+		&:not(:first-child) {
+			margin-left: 30px;
+		}
 	}
 }
 
@@ -24,10 +45,19 @@
 	border-radius: 4px;
 
 	background-color: var(--team-bg-color);
+
+	@include tab {
+		width: 354px;
+	}
+
+	@include desk {
+		width: 270px;
+	}
 }
 
 .advantages-item__title {
 	margin-bottom: 10px;
+	text-align: center;
 
 	font-weight: 700;
 	font-size: 14px;
@@ -35,6 +65,7 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
+
 .advantages-item__text {
 	font-size: 14px;
 	line-height: 1.71;

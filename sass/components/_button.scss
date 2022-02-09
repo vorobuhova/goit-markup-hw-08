@@ -36,15 +36,23 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 200px;
+	width: 100%;
+	max-width: 200px;
 	height: 50px;
-	margin-left: 12px;
-
 	letter-spacing: 0.06em;
 
 	color: var(--primary-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	@mixin tel {
+		width: 200px;
+	}
+
+	@include desk {
+		margin-left: 12px;
+		margin-top: 0;
+	}
 }
 
 //------hero-modal------

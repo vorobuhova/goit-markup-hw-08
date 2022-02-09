@@ -2,42 +2,105 @@
 
 .team {
 	background-color: var(--team-bg-color);
+	@mixin tel {
+	}
+
+	@mixin tab {
+	}
+
+	@mixin deak {
+	}
 }
 
 .team-container {
-	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-right: auto;
 	margin-left: auto;
+
+	@mixin tel {
+		width: 480px;
+	}
+
+	@mixin tab {
+		width: 768px;
+	}
+
+	@mixin deak {
+		width: 1200px;
+	}
 }
 
 .team-title {
 	margin-top: 0;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+
+	@mixin deak {
+		margin-bottom: 50px;
+	}
 }
 
 .team-list {
-	display: flex;
-	justify-content: center;
 	padding: 0;
 	margin: 0;
+
+	@mixin tab {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-left: -30px;
+	}
+
+	@mixin deak {
+	}
 }
 
 .team-item {
-	height: 428px;
-
 	background-color: var(--primary-white-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 
-	&:not(:first-child) {
-		margin-left: 30px;
+	margin-bottom: 30px;
+
+	@mixin tel {
+		height: 622px;
+		width: 450px;
+	}
+
+	@mixin tab {
+		height: 536px;
+		width: 354px;
+
+		height: 536px;
+	}
+	margin-left: 30px;
+
+	@mixin deak {
+		width: 270px;
+		height: 428px;
 	}
 }
 
+.team-item__img {
+	width: 100%;
+}
+
 .team-holder {
-	padding: 30px 32px;
+	padding: 30px 0 24px 0;
+	margin-left: auto;
+	margin-right: auto;
+
+	@mixin tel {
+		padding: 30px 122px 24px;
+	}
+
+	@mixin tab {
+		padding: 30px 74px 24px;
+	}
+
+	@mixin deak {
+		padding: 30px 32px;
+	}
 }
 
 .team-holder__title {
@@ -57,12 +120,19 @@
 }
 
 .team-socials {
-	display: flex;
-	justify-content: space-between;
+	text-align: center;
+
+	@mixin tab {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.team-social {
+	display: inline-block;
 }
 
 .team-social__link {
-	display: block;
 	border-radius: 50%;
 	width: 44px;
 	height: 44px;

@@ -55,6 +55,14 @@
 					</li>
 				</ul>
 			</div>
+			<div class="menu-container js-menu-container">
+				<button type="button" class="mob-menu js-open-menu" aria-expanded="false" data-menu-button>
+					<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+						<use class="menu-container__icon-close" href="./images/icons.svg#close_mob"></use>
+						<use class="menu-container__icon-menu" href="./images/icons.svg#menu_mob"></use>
+					</svg>
+				</button>
+			</div>
 		</div>
 	</header>
 	<main>
@@ -152,7 +160,7 @@
 				<h2 class="title team-title">Наша команда</h2>
 				<ul class="team-list">
 					<li class="list team-item">
-						<img class="" src="./images/team-1.jpg" alt="улыбающийся мужчина в очках" width="270" />
+						<img class="team-item__img" src="./images/team-1.jpg" alt="улыбающийся мужчина в очках" />
 						<div class="team-holder">
 							<h3 class="team-holder__title">Игорь Демьяненко</h3>
 							<p class="team-holder__role" lang="en">Product Designer</p>
@@ -189,7 +197,7 @@
 						</div>
 					</li>
 					<li class="list team-item">
-						<img class="" src="./images/team-2.jpg" alt="красивая девушка улыбается" width="270" />
+						<img class="team-item__img" src="./images/team-2.jpg" alt="красивая девушка улыбается" />
 						<div class="team-holder">
 							<h3 class="team-holder__title">Ольга Репина</h3>
 							<p class="team-holder__role" lang="en">Frontend Developer</p>
@@ -226,7 +234,7 @@
 						</div>
 					</li>
 					<li class="list team-item">
-						<img class="" src="./images/team-3.jpg" alt="мужчина в голубой рубашке" width="270" />
+						<img class="team-item__img" src="./images/team-3.jpg" alt="мужчина в голубой рубашке" />
 						<div class="team-holder">
 							<h3 class="team-holder__title">Николай Тарасов</h3>
 							<p class="team-holder__role" lang="en">Marketing</p>
@@ -263,7 +271,7 @@
 						</div>
 					</li>
 					<li class="list team-item">
-						<img class="" src="./images/team-4.jpg" alt="мужчина c бородой" width="270" />
+						<img class="team-item__img" src="./images/team-4.jpg" alt="мужчина c бородой" />
 						<div class="team-holder">
 							<h3 class="team-holder__title">Михаил Ермаков</h3>
 							<p class="team-holder__role" lang="en">UI Designer</p>
@@ -361,12 +369,12 @@
 						<span class="footer-logo--accent">Studio</span>
 					</a>
 					<address>
-						<ul>
-							<li class="footer-map list footer-adress">г. Киев, пр-т Леси Украинки, 26</li>
-							<li class="list footer-adress">
+						<ul class="footer-adress">
+							<li class="footer-map list footer-adress__item">г. Киев, пр-т Леси Украинки, 26</li>
+							<li class="list footer-adress__item">
 								<a href="mailto:info@devstudio.com" class="footer-contact link">info@devstudio.com</a>
 							</li>
-							<li class="list footer-adress">
+							<li class="list footer-adress__item">
 								<a href="tel:+380961111111" class="footer-contact link">+38 096 111 11 11</a>
 							</li>
 						</ul>

@@ -1,0 +1,43 @@
+/* -------wedo------- */
+
+.wedo-section {
+	padding-top: 0;
+	padding-bottom: 94px;
+}
+
+.wedo-title {
+	margin-bottom: 50px;
+}
+
+.wedo-list {
+	display: flex;
+}
+
+.wedo-item {
+	position: relative;
+
+	&:not(:first-child) {
+		margin-left: 30px;
+	}
+}
+
+.wedo-item__overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(47, 48, 58, 0.8);
+}
+
+.overlay-holder__text {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	color: var(--primary-white-color);
+}

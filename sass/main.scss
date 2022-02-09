@@ -1,0 +1,22 @@
+@import "./utils/normalize";
+@import "./utils/variables";
+@import "./utils/base";
+@import "./utils/visually-hidden";
+
+/* -------Index------- */
+
+@import "./components/site-nav";
+@import "./components/logo";
+@import "./components/button";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/advantages";
+@import "./components/wedo";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+
+/* -------Portpholio------- */
+
+@import "./components/works-buttons";
+@import "./components/works";

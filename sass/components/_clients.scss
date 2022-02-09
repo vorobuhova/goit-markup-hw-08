@@ -1,0 +1,38 @@
+/* -------clients------- */
+
+.clients-title {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+.clients-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.clients-item__link {
+	width: 170px;
+	height: 92px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 1px solid var(--social-links);
+	border-radius: 4px;
+	color: var(--social-links);
+
+	transition: color var(--animation-duration) var(--timing-function),
+		border-color var(--animation-duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+	}
+}
+
+.clients__logo {
+	fill: currentColor;
+}

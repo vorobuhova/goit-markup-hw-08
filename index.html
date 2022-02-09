@@ -55,14 +55,11 @@
 					</li>
 				</ul>
 			</div>
-			<div class="menu-container js-menu-container">
-				<button type="button" class="mob-menu js-open-menu" aria-expanded="false" data-menu-button>
-					<svg width="40" height="40" aria-label="Переключатель мобильного меню">
-						<use class="menu-container__icon-close" href="./images/icons.svg#close_mob"></use>
-						<use class="menu-container__icon-menu" href="./images/icons.svg#menu_mob"></use>
-					</svg>
-				</button>
-			</div>
+			<button type="button" class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+				<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+					<use class="menu-button__icon-menu" href="./images/icons.svg#menu_mob"></use>
+				</svg>
+			</button>
 		</div>
 	</header>
 	<main>
@@ -490,6 +487,9 @@
 	</div>
 	<script src="./js/modal.js"></script>
 	<script src="./js/mobile-menu.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+		integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+		crossorigin="anonymous"></script>
 
 </body>
 

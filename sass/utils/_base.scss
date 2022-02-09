@@ -39,7 +39,7 @@ img {
 	line-height: 1.17;
 	text-align: center;
 
-	@media screen and (min-width: 1200px) {
+	@mixin desk {
 		font-size: 36px;
 	}
 }
@@ -59,15 +59,15 @@ img {
 	margin-right: auto;
 	margin-left: auto;
 
-	@media screen and (min-width: 480px) {
+	@mixin tel {
 		width: 480px;
 	}
 
-	@media screen and (min-width: 768px) {
-		width: 738px;
+	@mixin tab {
+		width: 768px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@mixin desk {
 		width: 1200px;
 	}
 }
@@ -76,7 +76,7 @@ img {
 	padding-top: 60px;
 	padding-bottom: 60px;
 
-	@media screen and (min-width: 1200px) {
+	@mixin desk {
 		padding-top: 94px;
 		padding-bottom: 94px;
 	}

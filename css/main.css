@@ -316,12 +316,6 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .title {
-    font-size: 36px;
-  }
-}
-
 .link {
   text-decoration: none;
 }
@@ -338,34 +332,9 @@ img {
   margin-left: auto;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 738px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .visually-hidden {
@@ -383,10 +352,6 @@ img {
 }
 
 /* -------Index------- */
-.all-nav {
-  display: none;
-}
-
 .flex-nav,
 .left-nav {
   display: -webkit-box;
@@ -398,15 +363,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .flex-nav,
-  .left-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 
 .right-nav {
@@ -448,11 +404,11 @@ img {
 }
 
 .contact-content__icon {
+  margin-right: 10px;
   fill: currentColor;
 }
 
 .contact-content {
-  padding: 32px 0;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -474,7 +430,7 @@ img {
   color: var(--accent-color);
 }
 
-.mob-menu {
+.menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -482,6 +438,54 @@ img {
   padding: 0;
   border: 0;
   background-color: transparent;
+}
+
+.mob-menu__icon-close {
+  display: none;
+}
+
+.mob-menu__icon-menu {
+  display: block;
+}
+
+.mob-menu.is-open .mob-menu__icon-close {
+  display: block;
+}
+
+.mob-menu.is-open .mob-menu__icon-menu {
+  display: none;
+}
+
+.menu-button__icon-close {
+  display: none;
+}
+
+.menu-button__icon-menu {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-close {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
+}
+
+.menu-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vh;
+  height: 100vw;
+  background-color: chartreuse;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .logo {
@@ -912,7 +916,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
     margin-bottom: 0;
   }
 }

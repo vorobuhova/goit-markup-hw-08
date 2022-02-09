@@ -35,9 +35,16 @@ img {
 
 .title {
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 28px;
 	line-height: 1.17;
 	text-align: center;
+
+	@media screen and (min-width: 768px) {
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 36px;
+	}
 }
 
 .link {
@@ -49,14 +56,27 @@ img {
 }
 
 .container {
-	width: 1200px;
+	width: 450px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-right: auto;
 	margin-left: auto;
+
+	@media screen and (min-width: 768px) {
+		width: 738px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
 }
 
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }

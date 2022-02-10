@@ -28,11 +28,13 @@
 	transform-origin: top left;
 	transition: transform var(--animation-duration) var(--timing-function);
 
-	width: 528px;
-	height: 581px;
+	width: 450px;
+	height: 609px;
 	top: 50%;
 	left: 50%;
 	padding: 40px;
+
+	z-index: 1;
 
 	background-color: var(--primary-white-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -40,6 +42,11 @@
 
 	.hero-backdrop.is-hidden & {
 		transform: scale(0.9) translate(-50%, -50%);
+	}
+
+	@mixin desk {
+		width: 528px;
+		height: 581px;
 	}
 }
 
@@ -87,6 +94,10 @@
 	text-align: center;
 
 	color: var(--title-text-color);
+
+	@media screen and (max-width: 1199px) {
+		line-height: 1.5;
+	}
 }
 
 .form-contacts-item {
@@ -158,17 +169,23 @@
 
 	transition: border-color var(--animation-duration) var(--timing-function);
 
-	&::placeholder {
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 1.14;
-		letter-spacing: 0.01em;
-
-		color: rgba(117, 117, 117, 0.5);
-	}
 	&:focus {
 		border-color: var(--accent-color);
 		border-width: 2px;
+	}
+}
+
+.label-textarea__textarea::placeholder {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.01em;
+
+	color: rgba(117, 117, 117, 0.5);
+
+	@mixin desk {
+		font-size: 12px;
+		line-height: 1.16;
 	}
 }
 
@@ -204,14 +221,20 @@
 .policy-label {
 	display: flex;
 	align-items: center;
+	width: 100%;
 
 	font-weight: 400;
 
-	font-size: 14px;
-	line-height: 1.71;
-	margin-left: 8.38px;
+	font-size: 12px;
+	line-height: 1.17;
 
 	color: var(--primary-text-color);
+
+	@mixin desk {
+		margin-left: 8.38px;
+		font-size: 14px;
+		line-height: 1.71;
+	}
 }
 
 .policy-link {

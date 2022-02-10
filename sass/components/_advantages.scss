@@ -1,8 +1,6 @@
 /* -------advantages------- */
 
 .advantages-list {
-	// display: flex;
-	// justify-content: center;
 	@include tab {
 		display: flex;
 		flex-wrap: wrap;
@@ -18,12 +16,22 @@
 }
 
 .advantages-item {
+	@media screen and (max-width: 767px) {
+		margin: 15px;
+		&:nth-child(1) {
+			margin-top: 0;
+		}
+	}
+
 	@include tab {
 		width: 354px;
 	}
 
-	@media screen and (max-width: 1199px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		margin: 15px;
+		&:nth-child(-n + 2) {
+			margin-top: 0;
+		}
 	}
 
 	@include desk {

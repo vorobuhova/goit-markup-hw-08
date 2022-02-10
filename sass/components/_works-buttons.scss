@@ -3,9 +3,26 @@
 .works-buttons {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
+
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	@mixin tab {
+		margin-bottom: 30px;
+	}
+
+	@mixin desk {
+		margin-bottom: 50px;
+	}
 }
 
 .work-buttons-item__btn {
 	margin-left: 8px;
+
+	@media screen and (max-width: 767px) {
+		margin-top: 15px;
+	}
 }

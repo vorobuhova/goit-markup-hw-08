@@ -1,9 +1,6 @@
 /* -------works------- */
 
-.works-container {
-	padding-left: -15px;
-	padding-right: -15px;
-	margin-top: -15px;
+.works-wrap {
 	margin-right: auto;
 	margin-left: auto;
 
@@ -23,15 +20,15 @@
 .works-list {
 	display: flex;
 	flex-wrap: wrap;
+
+	@mixin tab {
+		margin: -15px;
+	}
 }
 
 .works-link__backdrop {
 	position: relative;
 	overflow: hidden;
-}
-
-.works-card__img {
-	display: block;
 }
 
 .works-backdrop {
@@ -86,11 +83,14 @@
 
 	@mixin tab {
 		margin: 15px;
-		width: 354px;
+		// width: 354px;
+		flex-basis: calc((100% - 60px) / 2);
 	}
 
 	@mixin desk {
-		width: 370px;
+		// width: 370px;
+		// width: 350px;
+		flex-basis: calc((100% - 90px) / 3);
 	}
 }
 
@@ -108,6 +108,7 @@
 }
 
 .works-card__img {
+	display: block;
 	width: 100%;
 }
 

@@ -39,6 +39,14 @@
 				url("../images/index/hero/hero-desktop@2x.jpg");
 		}
 	}
+
+	@media screen and (max-width: 1199px) {
+		height: 400px;
+	}
+
+	@mixin desk {
+		height: 600px;
+	}
 }
 
 .hero-title {

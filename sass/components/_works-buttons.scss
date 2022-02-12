@@ -10,11 +10,11 @@
 		justify-content: flex-start;
 	}
 
-	@mixin tab {
+	@include tab {
 		margin-bottom: 30px;
 	}
 
-	@mixin desk {
+	@include desk {
 		margin-bottom: 50px;
 	}
 }

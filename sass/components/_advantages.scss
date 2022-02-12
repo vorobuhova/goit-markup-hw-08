@@ -16,30 +16,29 @@
 }
 
 .advantages-item {
+	@include tab {
+		width: 354px;
+	}
+
 	@media screen and (max-width: 767px) {
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
 	}
 
-	@include tab {
-		width: 354px;
-	}
-
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		margin: 15px;
 	}
-}
 
-@include desk {
-	// width: 270px;
-	&:not(:first-child) {
-		margin-left: 30px;
+	@include desk {
+		width: 270px;
+		&:not(:first-child) {
+			margin-left: 30px;
+		}
 	}
 }
 
 .advantages-item__icon {
-	width: 270px;
 	height: 120px;
 
 	display: flex;

@@ -3,7 +3,7 @@
 .wedo-section {
 	display: none;
 
-	@mixin desk {
+	@include desk {
 		display: block;
 		padding-top: 0;
 		padding-bottom: 94px;

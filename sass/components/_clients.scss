@@ -24,7 +24,7 @@
 	margin: 15px;
 	width: calc(100% / 2 - 30px);
 
-	@mixin tab {
+	@include tab {
 		width: calc(100% / 3 - 30px);
 	}
 }
@@ -48,7 +48,7 @@
 		border-color: var(--accent-color);
 	}
 
-	@mixin desk {
+	@include desk {
 		width: 170px;
 	}
 }

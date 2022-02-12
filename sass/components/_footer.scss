@@ -1,7 +1,7 @@
 /* -------footer------- */
 
 .footer-wrap-all {
-	@mixin desk {
+	@include desk {
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
@@ -16,7 +16,7 @@
 		justify-content: space-around;
 	}
 
-	@mixin desk {
+	@include desk {
 		display: flex;
 		align-items: baseline;
 
@@ -33,7 +33,7 @@
 .footer-adress {
 	text-align: center;
 
-	@mixin desk {
+	@include desk {
 		text-align: left;
 	}
 }
@@ -41,7 +41,7 @@
 .footer-adress__item:not(:last-child) {
 	margin-bottom: 8px;
 
-	@mixin desk {
+	@include desk {
 		margin-bottom: 9px;
 	}
 }
@@ -76,25 +76,21 @@
 
 .footer-socials {
 	height: 80px;
-
 	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
-}
 
-.footer-socials-list {
-	@mixin tab {
+	@include tab {
 		margin-top: 0;
 		margin-left: 0;
 		margin-right: 0;
 	}
 
-	@mixin desk {
+	@include desk {
 		height: 80px;
 		margin-left: 70px;
 	}
 }
-
 .footer-socials__title {
 	text-align: center;
 
@@ -106,7 +102,7 @@
 	color: var(--primary-white-color);
 	text-transform: uppercase;
 
-	@mixin desk {
+	@include desk {
 		text-align-last: left;
 	}
 }
@@ -116,7 +112,7 @@
 	align-items: center;
 	justify-content: center;
 
-	@mixin tel {
+	@include tel {
 		flex-wrap: wrap;
 	}
 }
@@ -151,7 +147,7 @@
 .footer-wrap-right {
 	margin-top: 60px;
 
-	@mixin desk {
+	@include desk {
 		margin-top: 0;
 	}
 }
@@ -169,21 +165,21 @@
 
 	color: var(--primary-white-color);
 
-	@mixin desk {
+	@include desk {
 		text-align-last: left;
 	}
 }
 
 .input-wrap {
-	@mixin desk {
+	@include desk {
 		display: flex;
 	}
 }
 
 .input-wrap__input {
 	display: block;
-	width: 100%;
 
+	width: 100%;
 	height: 50px;
 	padding: 15px 16px;
 
@@ -199,7 +195,7 @@
 		color: rgba(255, 255, 255, 0.6);
 	}
 
-	@mixin tel {
+	@include tel {
 		width: 450px;
 	}
 
@@ -208,7 +204,7 @@
 		margin-right: auto;
 	}
 
-	@mixin desk {
+	@include desk {
 		width: 358px;
 	}
 }

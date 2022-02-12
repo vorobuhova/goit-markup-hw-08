@@ -39,7 +39,7 @@ img {
 	line-height: 1.17;
 	text-align: center;
 
-	@mixin desk {
+	@include desk {
 		font-size: 36px;
 	}
 }
@@ -53,21 +53,20 @@ img {
 }
 
 .container {
-	width: 450px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-right: auto;
 	margin-left: auto;
 
-	@mixin tel {
+	@include tel {
 		width: 480px;
 	}
 
-	@mixin tab {
+	@include tab {
 		width: 768px;
 	}
 
-	@mixin desk {
+	@include desk {
 		width: 1200px;
 	}
 }
@@ -76,7 +75,7 @@ img {
 	padding-top: 60px;
 	padding-bottom: 60px;
 
-	@mixin desk {
+	@include desk {
 		padding-top: 94px;
 		padding-bottom: 94px;
 	}

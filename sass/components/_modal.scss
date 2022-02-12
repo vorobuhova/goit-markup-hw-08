@@ -28,8 +28,7 @@
 	transform-origin: top left;
 	transition: transform var(--animation-duration) var(--timing-function);
 
-	max-width: 100%;
-	width: 450px;
+	width: 90%;
 
 	top: 50%;
 	left: 50%;
@@ -45,7 +44,12 @@
 		transform: scale(0.9) translate(-50%, -50%);
 	}
 
-	@mixin desk {
+	@include tab {
+		max-width: 100%;
+		width: 450px;
+	}
+
+	@include desk {
 		width: 528px;
 		height: 581px;
 	}
@@ -57,10 +61,12 @@
 	top: 8px;
 	cursor: pointer;
 
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
 	display: flex;
+	flex-basis: 30px;
+	min-width: 30px;
+	min-height: 30px;
+	border-radius: 50%;
+
 	align-items: center;
 	justify-content: center;
 
@@ -77,6 +83,9 @@
 }
 
 .icon__close {
+	width: 18px;
+	height: 18px;
+
 	fill: #000;
 	transition: fill var(--animation-duration) var(--timing-function);
 
@@ -189,7 +198,7 @@
 
 	color: rgba(117, 117, 117, 0.5);
 
-	@mixin desk {
+	@include desk {
 		font-size: 12px;
 		line-height: 1.16;
 	}
@@ -232,7 +241,7 @@
 
 	color: var(--primary-text-color);
 
-	@mixin desk {
+	@include desk {
 		margin-left: 8px;
 		font-size: 14px;
 		line-height: 1.71;

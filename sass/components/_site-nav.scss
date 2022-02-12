@@ -14,7 +14,7 @@
 		justify-content: space-between;
 	}
 
-	@mixin tab {
+	@include tab {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -31,13 +31,13 @@
 }
 
 .left-nav {
-	@mixin tab {
+	@include tab {
 		margin-left: 93px;
 	}
 }
 
 .left-nav-menu {
-	@mixin tab {
+	@include tab {
 		display: flex;
 		align-items: center;
 	}
@@ -55,7 +55,7 @@
 	flex-direction: column-reverse;
 	margin-bottom: 64px;
 
-	@mixin tab {
+	@include tab {
 		display: block;
 		margin-left: auto;
 
@@ -63,7 +63,7 @@
 		margin-bottom: auto;
 	}
 
-	@mixin desk {
+	@include desk {
 		display: flex;
 		flex-direction: row;
 
@@ -76,19 +76,17 @@
 	position: relative;
 	padding-bottom: 32px;
 
-	@mixin tab {
+	@include tab {
 		&:not(:first-child) {
 			margin-left: 50px;
 		}
 		padding: 0;
 	}
-
-	@mixin desk {
-	}
 }
 
 .menu-item__text {
 	display: block;
+
 	padding: 0;
 
 	font-size: 14px;
@@ -104,7 +102,7 @@
 		color: var(--accent-color);
 	}
 
-	@mixin tab {
+	@include tab {
 		padding: 32px 0;
 	}
 
@@ -115,7 +113,7 @@
 }
 
 .menu-item__text--current::after {
-	@mixin tab {
+	@include tab {
 		content: "";
 		display: block;
 
@@ -134,7 +132,7 @@
 .contact-mail__icon,
 .contact-tel__icon {
 	display: none;
-	@mixin tab {
+	@include tab {
 		display: block;
 		margin-right: 10px;
 
@@ -145,6 +143,7 @@
 .contact-mail,
 .contact-tel {
 	font-size: 34px;
+
 	line-height: 1.17;
 	letter-spacing: 0.02em;
 	font-weight: 500;
@@ -164,12 +163,12 @@
 		font-size: 24px;
 	}
 
-	@mixin tab {
+	@include tab {
 		font-size: 14px;
 		line-height: 1.14;
 	}
 
-	@mixin desk {
+	@include desk {
 		padding: 32px 0;
 	}
 }
@@ -178,11 +177,11 @@
 	@media screen and (max-width: 767px) {
 		font-size: 24px;
 		line-height: 1.16;
+	}
 
-		@media screen and (min-width: 768px) and (max-width: 1199px) {
-			padding-top: 21px;
-			margin-bottom: 10px;
-		}
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		padding-top: 21px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -194,7 +193,7 @@
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		padding-bottom: 21px;
 	}
-	@mixin desk {
+	@include desk {
 		padding-bottom: 32px;
 	}
 }
@@ -204,7 +203,7 @@
 }
 
 .contact-item:not(:first-child) {
-	@mixin desk {
+	@include desk {
 		margin-left: 30px;
 	}
 }
@@ -216,7 +215,7 @@
 	justify-content: start;
 	flex-wrap: wrap;
 
-	@mixin tab {
+	@include tab {
 		display: none;
 	}
 }
@@ -273,7 +272,7 @@
 		fill: var(--accent-color);
 	}
 
-	@mixin tab {
+	@include tab {
 		display: none;
 	}
 }
@@ -294,7 +293,7 @@
 		fill: var(--accent-color);
 	}
 
-	@mixin tab {
+	@include tab {
 		display: none;
 	}
 }
@@ -303,7 +302,7 @@
 	display: none;
 }
 
-.mob-menu__icon-menu {
+.menu-button__icon-menu {
 	display: block;
 }
 

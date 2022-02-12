@@ -316,6 +316,12 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
 .link {
   text-decoration: none;
 }
@@ -325,16 +331,40 @@ img {
 }
 
 .container {
-  width: 450px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .visually-hidden {
@@ -668,7 +698,7 @@ img {
 @media screen and (max-width: 767px) {
   .menu-container {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100vw;
@@ -754,11 +784,30 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .logo-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-nav {
+    padding: 26px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-nav {
+    padding: 24px 0;
+  }
 }
 
 .logo-nav--accent {
@@ -776,6 +825,12 @@ img {
   display: block;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: left;
+  }
 }
 
 .footer-logo--accent {
@@ -1021,6 +1076,20 @@ img {
           transform: scale(0.9) translate(-50%, -50%);
 }
 
+@media screen and (min-width: 768px) {
+  .hero-modal {
+    max-width: 100%;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .hero-modal__close-btn {
   position: absolute;
   right: 8px;
@@ -1190,6 +1259,25 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (min-width: 1200px) {
+  .label-textarea__textarea::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .label-textarea__textarea:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .label-textarea__textarea::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .label-textarea__textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .policy-container {
   margin-bottom: 30px;
 }
@@ -1221,6 +1309,14 @@ img {
   font-size: 12px;
   line-height: 1.17;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .policy-label {
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .policy-text {

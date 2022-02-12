@@ -5,7 +5,7 @@
 	line-height: 1.16;
 	color: var(--accent-color);
 
-	@mixin desk {
+	@include desk {
 		font-size: 26px;
 		line-height: 1.19;
 	}
@@ -17,11 +17,11 @@
 	display: flex;
 	padding: 16px 0;
 
-	@mixin tab {
+	@include tab {
 		padding: 26px 0;
 	}
 
-	@mixin desk {
+	@include desk {
 		padding: 24px 0;
 	}
 }
@@ -45,13 +45,7 @@
 
 	text-align: center;
 
-	@mixin tel {
-	}
-
-	@mixin tab {
-	}
-
-	@mixin desk {
+	@include desk {
 		text-align: left;
 	}
 }

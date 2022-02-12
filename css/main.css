@@ -1939,6 +1939,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-form__label {
     text-align-last: left;
+    width: 570px;
   }
 }
 
@@ -1989,7 +1990,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (mіn-width: 480px) {
+@media screen and (min-width: 768px) {
   .input-wrap__input {
     width: 450px;
   }

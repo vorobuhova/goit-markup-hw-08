@@ -167,6 +167,7 @@
 
 	@include desk {
 		text-align-last: left;
+		width: 570px;
 	}
 }
 
@@ -195,7 +196,7 @@
 		color: rgba(255, 255, 255, 0.6);
 	}
 
-	@include tel {
+	@include tab {
 		width: 450px;
 	}
 
